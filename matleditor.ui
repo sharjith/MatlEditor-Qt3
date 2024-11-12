@@ -1,0 +1,2231 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>MatlEditor</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>MatlEditor</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>959</width>
+            <height>745</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>OpenGL Material Editor</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox" row="0" column="0">
+            <property name="name">
+                <cstring>groupBox2</cstring>
+            </property>
+            <property name="title">
+                <string>Preview</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QSlider" row="0" column="1">
+                    <property name="name">
+                        <cstring>sliderXRot</cstring>
+                    </property>
+                    <property name="maxValue">
+                        <number>360</number>
+                    </property>
+                    <property name="value">
+                        <number>45</number>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Rotate Model About X Axis</string>
+                    </property>
+                </widget>
+                <widget class="QFrame" row="0" column="0">
+                    <property name="name">
+                        <cstring>frame3</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>Panel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+                <widget class="QSlider" row="1" column="0">
+                    <property name="name">
+                        <cstring>sliderYRot</cstring>
+                    </property>
+                    <property name="maxValue">
+                        <number>360</number>
+                    </property>
+                    <property name="value">
+                        <number>45</number>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Rotate Model About Y Axis</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="0" column="3" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>groupBox1_2</cstring>
+            </property>
+            <property name="title">
+                <string>Material Values</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout2</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox3_4</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Ambient</string>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_7</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>20</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Red</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderMAG</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>47</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderMAB</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>72</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderMAR</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>22</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_2_5</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>71</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Blue</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_3_5</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>46</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Green</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox3_2_2</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Diffuse</string>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_5_2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>20</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Red</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderMDR</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>22</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderMDG</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>47</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderMDB</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>72</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_3_3_2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>46</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Green</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_2_3_2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>71</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Blue</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox3_3_2</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Specular</string>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_6_2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>20</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Red</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderMSR</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>22</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderMSG</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>47</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderMSB</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>72</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_2_4_2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>45</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Green</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_3_4_2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>70</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Blue</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox3_3_2_2</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Shininess</string>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_6_2_2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>20</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Value</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderShine</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>22</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>128</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                        </widget>
+                    </vbox>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QPushButton" row="1" column="0">
+            <property name="name">
+                <cstring>pushButton2</cstring>
+            </property>
+            <property name="text">
+                <string>Change Model</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="1" column="1">
+            <property name="name">
+                <cstring>checkTexture</cstring>
+            </property>
+            <property name="text">
+                <string>Texture</string>
+            </property>
+        </widget>
+        <widget class="QGroupBox" row="0" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>groupBox1</cstring>
+            </property>
+            <property name="title">
+                <string>Light Values</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout3</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox3</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Ambient</string>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>20</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Red</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderLAB</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>72</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderLAG</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>47</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_3</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>46</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Green</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>71</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Blue</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderLAR</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>22</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox3_2</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Diffuse</string>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_5</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>20</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Red</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderLDR</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>22</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderLDG</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>47</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderLDB</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>72</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_2_3</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>72</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Blue</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_3_3</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>46</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Green</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox3_3</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Specular</string>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_6</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>20</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Red</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderLSB</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>72</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderLSR</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>22</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_3_4</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>45</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Green</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_2_4</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>70</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Blue</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderLSG</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>47</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>255</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox3_3_2_2_2</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Opacity</string>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_6_2_2_3</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>20</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Value</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>sliderTransparency</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>54</x>
+                                        <y>22</y>
+                                        <width>136</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="maxValue">
+                                    <number>100</number>
+                                </property>
+                                <property name="value">
+                                    <number>100</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                        </widget>
+                    </vbox>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QPushButton" row="1" column="4">
+            <property name="name">
+                <cstring>pushButtonDefault</cstring>
+            </property>
+            <property name="text">
+                <string>Default Values</string>
+            </property>
+        </widget>
+        <widget class="QGroupBox" row="2" column="0" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>groupBox11</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="title">
+                <string>Predefined Materials</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout1</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton" row="0" column="10">
+                            <property name="name">
+                                <cstring>pushButtonGreenRubber</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>greenru.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Green Rubber</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="9">
+                            <property name="name">
+                                <cstring>pushButtonBlackRubber</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>blackru.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Black Rubber</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="6">
+                            <property name="name">
+                                <cstring>pushButtonBlackPlastic</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>blackpl.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Black Plastic</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="3">
+                            <property name="name">
+                                <cstring>pushButtonTurquoise</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>turquoise.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Turquoise</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="1">
+                            <property name="name">
+                                <cstring>pushButtonBronze</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>bronze.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Bronze</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="9">
+                            <property name="name">
+                                <cstring>pushButtonCyanRubber</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>cyanru.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Cyan Rubber</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="8">
+                            <property name="name">
+                                <cstring>pushButtonYellowPlastic</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>yellowpl.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Yellow Plastic</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="3">
+                            <property name="name">
+                                <cstring>pushButtonGold</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>gold.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Gold</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="11">
+                            <property name="name">
+                                <cstring>pushButtonWhiteRubber</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>whiteru.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>White Rubber</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="8">
+                            <property name="name">
+                                <cstring>pushButtonWhitePlastic</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>whitepl.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>White Plastic</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="5">
+                            <property name="name">
+                                <cstring>pushButtonChrome</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>chrome.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Chrome</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="2">
+                            <property name="name">
+                                <cstring>pushButtonEmerald</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>emerald.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Emerald</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="0">
+                            <property name="name">
+                                <cstring>pushButtonSilver</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>silver.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Silver</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="0">
+                            <property name="name">
+                                <cstring>pushButtonBrass</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>brass.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Brass</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="11">
+                            <property name="name">
+                                <cstring>pushButtonYellowRubber</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>yellowru.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Yellow rubber</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="7">
+                            <property name="name">
+                                <cstring>pushButtonRedPlastic</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>redpl.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Red Plastic</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="5">
+                            <property name="name">
+                                <cstring>pushButtonPerl</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>pearl.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Pearl</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="2">
+                            <property name="name">
+                                <cstring>pushButtonCopper</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>copper.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Copper</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="10">
+                            <property name="name">
+                                <cstring>pushButtonRedRubber</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>redru.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Red Rubber</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="7">
+                            <property name="name">
+                                <cstring>pushButtonGreenPlastic</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>greenpl.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Green Plastic</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="4">
+                            <property name="name">
+                                <cstring>pushButtonObsidian</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>obsidian.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Obsidian</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="1">
+                            <property name="name">
+                                <cstring>pushButtonRuby</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>ruby.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Ruby</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="6">
+                            <property name="name">
+                                <cstring>pushButtonCyanPlastic</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>cyanpl.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Cyan Plastic</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="4">
+                            <property name="name">
+                                <cstring>pushButtonJade</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>7</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>67</width>
+                                    <height>67</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>jade.png</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Jade</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QPushButton" row="3" column="0" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>pushButton1</cstring>
+            </property>
+            <property name="text">
+                <string>Close</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="1" column="2" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>pushButtonTexture</cstring>
+            </property>
+            <property name="text">
+                <string>Select Texture Map</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButton2</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotChangeModel()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonBrass</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotBrass()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonBronze</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotBronze()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonCopper</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotCopper()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonGold</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotGold()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonSilver</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotSilver()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonRuby</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotRuby()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonEmerald</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotEmerald()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonTurquoise</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotTurquoise()</slot>
+    </connection>
+    <connection>
+        <sender>sliderLAR</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotLightAmbRed()</slot>
+    </connection>
+    <connection>
+        <sender>sliderLAG</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotLightAmbGreen()</slot>
+    </connection>
+    <connection>
+        <sender>sliderLAB</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotLightAmbBlue()</slot>
+    </connection>
+    <connection>
+        <sender>sliderLDR</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotLightDiffRed()</slot>
+    </connection>
+    <connection>
+        <sender>sliderLDG</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotLightDiffGreen()</slot>
+    </connection>
+    <connection>
+        <sender>sliderLDB</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotLightDiffBlue()</slot>
+    </connection>
+    <connection>
+        <sender>sliderLSR</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotLightSpecRed()</slot>
+    </connection>
+    <connection>
+        <sender>sliderLSG</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotLightSpecGreen()</slot>
+    </connection>
+    <connection>
+        <sender>sliderLSB</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotLightSpecBlue()</slot>
+    </connection>
+    <connection>
+        <sender>sliderMAR</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotMatlAmbRed()</slot>
+    </connection>
+    <connection>
+        <sender>sliderMAG</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotMatlAmbGreen()</slot>
+    </connection>
+    <connection>
+        <sender>sliderMAB</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotMatlAmbBlue()</slot>
+    </connection>
+    <connection>
+        <sender>sliderMDR</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotMatlDiffRed()</slot>
+    </connection>
+    <connection>
+        <sender>sliderMDG</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotMatlDiffGreen()</slot>
+    </connection>
+    <connection>
+        <sender>sliderMDB</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotMatlDiffBlue()</slot>
+    </connection>
+    <connection>
+        <sender>sliderMSR</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotMatlSpecRed()</slot>
+    </connection>
+    <connection>
+        <sender>sliderMSG</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotMatlSpecGreen()</slot>
+    </connection>
+    <connection>
+        <sender>sliderMSB</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotMatlSpecBlue()</slot>
+    </connection>
+    <connection>
+        <sender>sliderShine</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotMatlShine()</slot>
+    </connection>
+    <connection>
+        <sender>checkTexture</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotToggleTexture(bool)</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonTexture</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotSelectTexture()</slot>
+    </connection>
+    <connection>
+        <sender>sliderTransparency</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotTransparency()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonDefault</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotDefault()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonJade</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotJade()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonObsidian</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotObsidian()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonPerl</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotPearl()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonChrome</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotChrome()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonBlackPlastic</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotBlackPl()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonCyanPlastic</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotCyanPl()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonGreenPlastic</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotGreenPl()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonRedPlastic</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotRedPl()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonWhitePlastic</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotWhitePl()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonYellowPlastic</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotYellowPl()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonBlackRubber</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotBlackRu()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonCyanRubber</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotCyanRu()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonGreenRubber</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotGreenRu()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonRedRubber</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotRedRu()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonWhiteRubber</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotWhiteRu()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonYellowRubber</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotYellowRu()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton1</sender>
+        <signal>clicked()</signal>
+        <receiver>MatlEditor</receiver>
+        <slot>slotQuit()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>pushButtonBrass</tabstop>
+    <tabstop>pushButtonSilver</tabstop>
+    <tabstop>pushButtonBronze</tabstop>
+    <tabstop>pushButtonRuby</tabstop>
+    <tabstop>pushButtonCopper</tabstop>
+    <tabstop>pushButtonEmerald</tabstop>
+    <tabstop>pushButtonGold</tabstop>
+    <tabstop>pushButtonTurquoise</tabstop>
+    <tabstop>pushButtonJade</tabstop>
+    <tabstop>pushButtonObsidian</tabstop>
+    <tabstop>pushButtonPerl</tabstop>
+    <tabstop>pushButtonChrome</tabstop>
+    <tabstop>pushButtonBlackPlastic</tabstop>
+    <tabstop>pushButtonCyanPlastic</tabstop>
+    <tabstop>pushButtonGreenPlastic</tabstop>
+    <tabstop>pushButtonRedPlastic</tabstop>
+    <tabstop>pushButtonWhitePlastic</tabstop>
+    <tabstop>pushButtonYellowPlastic</tabstop>
+    <tabstop>pushButtonBlackRubber</tabstop>
+    <tabstop>pushButtonCyanRubber</tabstop>
+    <tabstop>pushButtonGreenRubber</tabstop>
+    <tabstop>pushButtonRedRubber</tabstop>
+    <tabstop>pushButtonWhiteRubber</tabstop>
+    <tabstop>pushButtonYellowRubber</tabstop>
+    <tabstop>sliderLAR</tabstop>
+    <tabstop>sliderLAG</tabstop>
+    <tabstop>sliderLAB</tabstop>
+    <tabstop>sliderLDR</tabstop>
+    <tabstop>sliderLDG</tabstop>
+    <tabstop>sliderLDB</tabstop>
+    <tabstop>sliderLSR</tabstop>
+    <tabstop>sliderLSG</tabstop>
+    <tabstop>sliderLSB</tabstop>
+    <tabstop>sliderMAR</tabstop>
+    <tabstop>sliderMAG</tabstop>
+    <tabstop>sliderMAB</tabstop>
+    <tabstop>sliderMDR</tabstop>
+    <tabstop>sliderMDG</tabstop>
+    <tabstop>sliderMDB</tabstop>
+    <tabstop>sliderMSR</tabstop>
+    <tabstop>sliderMSG</tabstop>
+    <tabstop>sliderMSB</tabstop>
+    <tabstop>sliderShine</tabstop>
+    <tabstop>sliderTransparency</tabstop>
+    <tabstop>checkTexture</tabstop>
+    <tabstop>pushButtonTexture</tabstop>
+    <tabstop>pushButtonDefault</tabstop>
+    <tabstop>pushButton2</tabstop>
+    <tabstop>sliderYRot</tabstop>
+    <tabstop>sliderXRot</tabstop>
+    <tabstop>pushButton1</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in declaration">GLView.h</include>
+</includes>
+<variables>
+    <variable access="private">GLView* theView;</variable>
+</variables>
+<slots>
+    <slot access="private">slotChangeModel()</slot>
+    <slot>slotBrass()</slot>
+    <slot>slotBronze()</slot>
+    <slot>slotCopper()</slot>
+    <slot>slotGold()</slot>
+    <slot>slotSilver()</slot>
+    <slot>slotRuby()</slot>
+    <slot>slotEmerald()</slot>
+    <slot>slotTurquoise()</slot>
+    <slot>slotLightAmbRed()</slot>
+    <slot>slotLightAmbGreen()</slot>
+    <slot>slotLightAmbBlue()</slot>
+    <slot>slotLightDiffRed()</slot>
+    <slot>slotLightDiffGreen()</slot>
+    <slot>slotLightDiffBlue()</slot>
+    <slot>slotLightSpecRed()</slot>
+    <slot>slotLightSpecGreen()</slot>
+    <slot>slotLightSpecBlue()</slot>
+    <slot>slotMatlAmbRed()</slot>
+    <slot>slotMatlAmbGreen()</slot>
+    <slot>slotMatlAmbBlue()</slot>
+    <slot>slotMatlDiffRed()</slot>
+    <slot>slotMatlDiffGreen()</slot>
+    <slot>slotMatlDiffBlue()</slot>
+    <slot>slotMatlSpecRed()</slot>
+    <slot>slotMatlSpecGreen()</slot>
+    <slot>slotMatlSpecBlue()</slot>
+    <slot>slotMatlShine()</slot>
+    <slot>slotToggleTexture( bool )</slot>
+    <slot>slotSelectTexture()</slot>
+    <slot>slotTransparency()</slot>
+    <slot>slotDefault()</slot>
+    <slot>slotJade()</slot>
+    <slot>slotObsidian()</slot>
+    <slot>slotPearl()</slot>
+    <slot>slotChrome()</slot>
+    <slot>slotBlackPl()</slot>
+    <slot>slotCyanPl()</slot>
+    <slot>slotGreenPl()</slot>
+    <slot>slotRedPl()</slot>
+    <slot>slotWhitePl()</slot>
+    <slot>slotYellowPl()</slot>
+    <slot>slotBlackRu()</slot>
+    <slot>slotCyanRu()</slot>
+    <slot>slotGreenRu()</slot>
+    <slot>slotRedRu()</slot>
+    <slot>slotWhiteRu()</slot>
+    <slot>slotYellowRu()</slot>
+    <slot>slotQuit()</slot>
+</slots>
+<functions>
+    <function specifier="non virtual">init()</function>
+    <function>destroy()</function>
+    <function access="private" specifier="non virtual">updateSliders()</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
