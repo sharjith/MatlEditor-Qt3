@@ -1,12 +1,16 @@
-SOURCES	+= GLView.cpp \
-	main.cpp
+TEMPLATE	= app
+LANGUAGE	= C++
+
+CONFIG	+= qt warn_on debug opengl
+
+LIBS	+= -lglut
+
+SOURCES	+= GLView.cpp main.cpp
+
 HEADERS	+= GLView.h
-unix {
-  UI_DIR = .ui
-  MOC_DIR = .moc
-  OBJECTS_DIR = .obj
-}
+
 FORMS	= matleditor.ui
+
 IMAGES	= res/blackpl.png \
 	res/blackru.png \
 	res/brass.png \
@@ -32,7 +36,9 @@ IMAGES	= res/blackpl.png \
 	res/whiteru.png \
 	res/yellowpl.png \
 	res/yellowru.png
-TEMPLATE	=app
-CONFIG	+= qt warn_on debug opengl
-LIBS	+= -lglut
-LANGUAGE	= C++
+
+unix {
+  UI_DIR = .ui
+  MOC_DIR = .moc
+  OBJECTS_DIR = .obj
+}
